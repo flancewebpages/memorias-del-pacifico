@@ -10,7 +10,7 @@ const App: React.FC = () => {
         className="relative flex flex-col justify-center items-center text-center px-6 py-32 md:py-40 overflow-hidden"
       >
         <img
-          src="/imagenes/paper-texture-light.jpg"
+          src="imagenes/paper-texture-light.jpg"
           className="absolute inset-0 -z-10 w-full h-full object-cover object-center opacity-95"
         />
 
@@ -88,7 +88,7 @@ const App: React.FC = () => {
         <div className="mt-16 border-t border-amber-200 pt-10 grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
           {[
             {
-              src: "/imagenes/foto1.png",
+              src: "imagenes/foto1.png",
               alt: "Matrimonio de Miguel Abuchar e Isabel Lemus",
               caption: (
                 <>
@@ -99,7 +99,7 @@ const App: React.FC = () => {
               ),
             },
             {
-              src: "/imagenes/foto2.png",
+              src: "imagenes/foto2.png",
               alt: "Miguel Abuchar con monjas en el Ingenio de Sautatá",
               caption: (
                 <>
@@ -111,7 +111,7 @@ const App: React.FC = () => {
               ),
             },
             {
-              src: "/imagenes/foto3.png",
+              src: "imagenes/foto3.png",
               alt: "Ingenio Azucarero de Sautatá",
               caption: <>Ingenio Azucarero de Sautatá (1929).</>,
             },
@@ -217,7 +217,7 @@ const App: React.FC = () => {
         >
           <div className="w-full md:w-3/4 aspect-[16/9] bg-amber-50 border border-choco-200 rounded-2xl shadow-md overflow-hidden flex items-center justify-center">
             <img
-              src="/imagenes/foto4.png"
+              src="imagenes/foto4.png"
               alt="Confluencia de los ríos Atrato y Arquía"
               className="object-contain w-full h-full"
             />
@@ -297,7 +297,7 @@ const App: React.FC = () => {
         >
           <div className="w-full md:w-3/4 aspect-[16/9] bg-amber-50 border border-choco-200 rounded-2xl shadow-md overflow-hidden flex items-center justify-center">
             <img
-              src="/imagenes/foto5.png"
+              src="imagenes/foto5.png"
               alt="Puerto de Sautatá, 1920"
               className="object-contain w-full h-full"
             />
