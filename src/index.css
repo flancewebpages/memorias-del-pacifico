@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== Reset y estilo global ===== */
+:root {
+  font-family: "Inter", sans-serif;
+  color: #2b211a;
+  background-color: #fdfaf7;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* Sutil transición entre secciones */
+section {
+  scroll-margin-top: 80px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
