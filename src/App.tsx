@@ -367,7 +367,7 @@ const App: React.FC = () => {
     >
       <div className="w-full md:w-3/4 aspect-[16/9] bg-amber-50 border border-choco-200 rounded-2xl shadow-md overflow-hidden flex items-center justify-center">
         <img
-          src="/imagenes/foto6.png"
+          src="imagenes/foto6.png"
           alt="Trabajadores esclavos de la empresa Sautatá"
           className="object-contain w-full h-full"
         />
@@ -497,7 +497,7 @@ const App: React.FC = () => {
     >
       <div className="w-full md:w-3/4 aspect-[16/9] bg-amber-50 border border-choco-200 rounded-2xl shadow-md overflow-hidden flex items-center justify-center">
         <img
-          src="/imagenes/foto7.png"
+          src="imagenes/foto7.png"
           alt="Fábrica de la Manuelita y ferrocarril del Pacífico"
           className="object-contain w-full h-full"
         />
@@ -543,7 +543,7 @@ const App: React.FC = () => {
     >
       <div className="w-full md:w-3/4 aspect-[16/9] bg-amber-50 border border-choco-200 rounded-2xl shadow-md overflow-hidden flex items-center justify-center">
         <img
-          src="/imagenes/foto8.png"
+          src="imagenes/foto8.png"
           alt="Oficinas y campamento del Ingenio de Sautatá"
           className="object-contain w-full h-full"
         />
