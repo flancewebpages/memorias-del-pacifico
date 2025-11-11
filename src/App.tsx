@@ -309,55 +309,252 @@ const App: React.FC = () => {
         </motion.figure>
       </section>
 
-      {/* ======= SECCIÓN 4: ESFUERZOS DE DESARROLLO FALLIDOS ======= */}
-      <section
-        data-section="esfuerzos"
-        className="px-6 md:px-20 py-24 bg-gradient-to-b from-amber-50 via-white to-amber-50 text-justify shadow-inner"
-      >
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          viewport={{ once: true }}
-          className="max-w-4xl mx-auto space-y-6 text-lg leading-relaxed"
-        >
-          <h2 className="text-2xl md:text-3xl font-serif font-semibold text-choco-800">
-            Esfuerzos de desarrollo fallidos
-          </h2>
+  {/* ======= SECCIÓN 4: ESFUERZOS DE DESARROLLO FALLIDOS ======= */}
+  <section
+    data-section="esfuerzos"
+    className="px-6 md:px-20 py-24 bg-gradient-to-b from-amber-50 via-white to-amber-50 text-justify shadow-inner"
+  >
+    <motion.div
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+      viewport={{ once: true }}
+      className="max-w-4xl mx-auto space-y-6 text-lg leading-relaxed"
+    >
+      <h2 className="text-2xl md:text-3xl font-serif font-semibold text-choco-800">
+        Esfuerzos de desarrollo fallidos
+      </h2>
 
-          <p>
-            El Ingenio de Sautatá representó uno de los primeros intentos del
-            Pacífico colombiano por fortalecer la producción local y reducir la
-            dependencia de los mercados externos. En su concepción, anticipó las
-            ideas de la sustitución de importaciones, al buscar que el azúcar,
-            el alcohol y la madera se produjeran y procesaran dentro del país (
-            <i>González Escobar, Sirio-libaneses en el Chocó</i>). Sin embargo,
-            el contexto regional no favoreció ese propósito. Los costos de
-            operación eran altos, el acceso a crédito casi inexistente y la
-            falta de infraestructura aumentaba los gastos de transporte. A
-            diferencia del Valle del Cauca, donde el Estado impulsaba la
-            industria, en el Chocó la producción dependía completamente del
-            esfuerzo familiar.
-          </p>
+      <p>
+        El Ingenio de Sautatá representó uno de los primeros intentos del
+        Pacífico colombiano por fortalecer la producción local y reducir la
+        dependencia de los mercados externos. En su concepción, anticipó las
+        ideas de la sustitución de importaciones, al buscar que el azúcar,
+        el alcohol y la madera se produjeran y procesaran dentro del país{" "}
+        (<i>González Escobar, Sirio-libaneses en el Chocó</i>). Sin embargo,
+        el contexto regional no favoreció ese propósito. Los costos de
+        operación eran altos, el acceso a crédito casi inexistente y la falta
+        de infraestructura aumentaba los gastos de transporte. A diferencia
+        del Valle del Cauca, donde el Estado impulsaba la industria, en el
+        Chocó la producción dependía completamente del esfuerzo familiar.
+      </p>
 
-          <p>
-            Durante la década de 1940, la empresa enfrentó conflictos laborales
-            que reflejaron las tensiones de una economía en transición. Las
-            huelgas en el aserrío y la destilería, impulsadas por demandas de
-            mejores salarios y jornadas, interrumpieron la producción y
-            deterioraron las finanzas del ingenio (<i>SciELO, 2012</i>). A ello
-            se sumó la inestabilidad de los precios y la dificultad para
-            sostener una operación industrial en medio de la selva. Como
-            recordaba Graciela Abuchar,{" "}
-            <span className="italic text-choco-700">
-              “era un ingenio grande, lleno de vida, pero sin apoyo”.
-            </span>{" "}
-            Sautatá terminó siendo un ejemplo del tipo de desarrollo que nace
-            con fuerza, pero se apaga al no encontrar respaldo en el entorno
-            institucional y económico que lo rodea.
-          </p>
-        </motion.div>
-      </section>
+      <p>
+        Durante la década de 1940, la empresa enfrentó conflictos laborales
+        que reflejaron las tensiones de una economía en transición. Las
+        huelgas en el aserrío y la destilería, impulsadas por demandas de
+        mejores salarios y jornadas, interrumpieron la producción y
+        deterioraron las finanzas del ingenio (<i>SciELO, 2012</i>). A ello
+        se sumó la inestabilidad de los precios y la dificultad para
+        sostener una operación industrial en medio de la selva. Como
+        recordaba Graciela Abuchar,{" "}
+        <span className="italic text-choco-700">
+          “era un ingenio grande, lleno de vida, pero sin apoyo”.
+        </span>{" "}
+        Sautatá terminó siendo un ejemplo del tipo de desarrollo que nace
+        con fuerza, pero se apaga al no encontrar respaldo en el entorno
+        institucional y económico que lo rodea.
+      </p>
+    </motion.div>
+
+    {/* Imagen foto6 */}
+    <motion.figure
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+      viewport={{ once: true }}
+      className="mt-12 flex flex-col items-center text-center"
+    >
+      <div className="w-full md:w-3/4 aspect-[16/9] bg-amber-50 border border-choco-200 rounded-2xl shadow-md overflow-hidden flex items-center justify-center">
+        <img
+          src="/imagenes/foto6.png"
+          alt="Trabajadores esclavos de la empresa Sautatá"
+          className="object-contain w-full h-full"
+        />
+      </div>
+      <figcaption className="mt-3 text-[13px] italic text-choco-700 max-w-2xl leading-snug">
+        Trabajadores esclavos de la empresa Sautatá. 1920 (Atención de Claudia Leal).
+      </figcaption>
+    </motion.figure>
+
+    {/* ======= NUEVA SUBSECCIÓN: INTERACCIÓN CENTRO–PERIFERIA ======= */}
+    <motion.div
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+      viewport={{ once: true }}
+      className="max-w-4xl mx-auto mt-20 space-y-6 text-lg leading-relaxed"
+    >
+      <h3 className="text-xl md:text-2xl font-serif font-semibold text-amber-800">
+        Interacción centro–periferia
+      </h3>
+
+      <p>
+        El cierre del Ingenio de Sautatá y la venta de su maquinaria al Valle
+        del Cauca evidenciaron la distancia estructural entre el centro y la
+        periferia del país. Mientras el Chocó carecía de carreteras, crédito
+        y apoyo institucional, el Valle contaba con vías férreas, puertos y
+        políticas de fomento que consolidaron una agroindustria estable{" "}
+        (<i>Echeverría, 2019; ASOCAÑA, 2023</i>). Esa transferencia de recursos
+        simboliza cómo el desarrollo colombiano se concentró en regiones
+        integradas, dejando a los márgenes sin continuidad productiva. Lo que
+        en el Atrato fue un esfuerzo familiar aislado, en el Cauca se
+        convirtió en un modelo sostenido de crecimiento industrial.
+      </p>
+
+      {/* Tabla comparativa */}
+      <div className="overflow-x-auto mt-10">
+        <table className="min-w-full border border-choco-300 rounded-xl shadow-md bg-white/90">
+          <thead className="bg-amber-100 text-choco-900">
+            <tr>
+              <th className="px-4 py-3 text-left font-semibold">Aspecto</th>
+              <th className="px-4 py-3 text-left font-semibold">
+                Chocó (Ingenio Sautatá)
+              </th>
+              <th className="px-4 py-3 text-left font-semibold">
+                Valle del Cauca (Ingenios azucareros)
+              </th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-amber-200 text-[15px] leading-relaxed">
+            <tr>
+              <td className="px-4 py-3 font-medium text-choco-800">
+                Infraestructura de transporte
+              </td>
+              <td className="px-4 py-3">
+                Sin carreteras estables; dependencia total del río Atrato y de los
+                vapores fluviales (<i>González Escobar</i>).
+              </td>
+              <td className="px-4 py-3">
+                Red vial y ferroviaria consolidada; conexión con Buenaventura y el
+                resto del país (<i>Arboleda, 2015</i>).
+              </td>
+            </tr>
+            <tr>
+              <td className="px-4 py-3 font-medium text-choco-800">
+                Acceso al crédito e inversión
+              </td>
+              <td className="px-4 py-3">
+                Capital familiar limitado; sin apoyo estatal ni banca regional{" "}
+                (<i>Banco de la República, 2020</i>).
+              </td>
+              <td className="px-4 py-3">
+                Inversión sostenida de bancos y empresas nacionales; políticas de
+                fomento industrial (<i>Ripoll Echeverría, 2010</i>).
+              </td>
+            </tr>
+            <tr>
+              <td className="px-4 py-3 font-medium text-choco-800">
+                Integración al mercado
+              </td>
+              <td className="px-4 py-3">
+                Producción local sin conexión constante con el mercado nacional;
+                problemas de transporte y almacenamiento (<i>Videoteca del Chocó, 2020</i>).
+              </td>
+              <td className="px-4 py-3">
+                Exportación de azúcar y derivados; integración vertical y mercados
+                internacionales (<i>Asocaña, 2023</i>).
+              </td>
+            </tr>
+            <tr>
+              <td className="px-4 py-3 font-medium text-choco-800">
+                Presencia institucional
+              </td>
+              <td className="px-4 py-3">
+                Estado débil o ausente; infraestructura pública mínima{" "}
+                (<i>Barragán, 2012</i>).
+              </td>
+              <td className="px-4 py-3">
+                Estado activo en infraestructura, crédito y regulación del sector{" "}
+                (<i>Arboleda, 2015</i>).
+              </td>
+            </tr>
+            <tr>
+              <td className="px-4 py-3 font-medium text-choco-800">
+                Escala y continuidad
+              </td>
+              <td className="px-4 py-3">
+                Proyecto pionero (400 trabajadores y 5.000 hectáreas) pero
+                aislado; colapsa tras la quiebra de 1944.
+              </td>
+              <td className="px-4 py-3">
+                Sector consolidado; ingenios como Providencia, Cauca y Riopaila
+                permanecen activos (<i>Banrepcultural, 2022</i>).
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </motion.div>
+
+    {/* Imagen foto7 */}
+    <motion.figure
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+      viewport={{ once: true }}
+      className="mt-16 flex flex-col items-center text-center"
+    >
+      <div className="w-full md:w-3/4 aspect-[16/9] bg-amber-50 border border-choco-200 rounded-2xl shadow-md overflow-hidden flex items-center justify-center">
+        <img
+          src="/imagenes/foto7.png"
+          alt="Fábrica de la Manuelita y ferrocarril del Pacífico"
+          className="object-contain w-full h-full"
+        />
+      </div>
+      <figcaption className="mt-3 text-[13px] italic text-choco-700 max-w-2xl leading-snug">
+        La fábrica de la Manuelita (Valle del Cauca) y el ferrocarril del Pacífico (1920).
+      </figcaption>
+    </motion.figure>
+
+    {/* ======= NUEVA SUBSECCIÓN: EL LEGADO DE SAUTATÁ ======= */}
+    <motion.div
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+      viewport={{ once: true }}
+      className="max-w-4xl mx-auto mt-20 space-y-6 text-lg leading-relaxed"
+    >
+      <h3 className="text-xl md:text-2xl font-serif font-semibold text-amber-800">
+        El legado de Sautatá
+      </h3>
+
+      <p>
+        La historia del Ingenio de Sautatá trasciende su cierre y se convierte en
+        una forma de entender el desarrollo desigual del país. Lo que los Abuchar
+        construyeron en el Atrato no fue solo una empresa, sino un intento por
+        demostrar que el progreso también podía nacer lejos del centro. Su legado
+        no está en los resultados económicos, sino en la capacidad de haber
+        transformado, aunque fuera por un tiempo, la idea de lo posible en el
+        Pacífico. Sautatá fue trabajo, aprendizaje y persistencia en medio de la
+        ausencia estatal, y su recuerdo, hoy recogido en los testimonios de
+        Graciela Abuchar, sigue mostrando que el esfuerzo individual no basta
+        cuando las condiciones estructurales permanecen intactas.
+      </p>
+    </motion.div>
+
+    {/* Imagen foto8 */}
+    <motion.figure
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+      viewport={{ once: true }}
+      className="mt-16 flex flex-col items-center text-center"
+    >
+      <div className="w-full md:w-3/4 aspect-[16/9] bg-amber-50 border border-choco-200 rounded-2xl shadow-md overflow-hidden flex items-center justify-center">
+        <img
+          src="/imagenes/foto8.png"
+          alt="Oficinas y campamento del Ingenio de Sautatá"
+          className="object-contain w-full h-full"
+        />
+      </div>
+      <figcaption className="mt-3 text-[13px] italic text-choco-700 max-w-2xl leading-snug">
+        Oficinas y campamento del Ingenio de Sautatá (Tomado de:{" "}
+        <i>Geografía Económica de Colombia, t. VI. Chocó, Contraloría General de la República. Bogotá, 1943, p. 443.</i>)
+      </figcaption>
+    </motion.figure>
+  </section>
+
 
       {/* ======= SECCIÓN 5: REFERENCIAS ======= */}
       <section
@@ -384,11 +581,12 @@ const App: React.FC = () => {
               </i>{" "}
               Revista de Historia Social y de las Mentalidades, 16(2), 45–68.
             </li>
+
             <li>
               Diario La Libertad. (2024, marzo 29).{" "}
               <i>
-                Rescatando la historia: El Chocó en blanco y negro revela el
-                pasado a través del cine.
+                Rescatando la historia: El Chocó en blanco y negro revela el pasado a
+                través del cine.
               </i>{" "}
               Recuperado de:{" "}
               <a
@@ -400,20 +598,24 @@ const App: React.FC = () => {
                 diariolalibertad.com
               </a>
             </li>
+
             <li>
               Engerman, S., & Sokoloff, K. (1997).{" "}
               <i>
-                Factor endowments, institutions, and differential paths of
-                growth among new world economies.
+                Factor endowments, institutions, and differential paths of growth
+                among new world economies.
               </i>{" "}
-              In S. Haber (Ed.), <i>How Latin America fell behind</i> (pp.
-              260–304). Stanford University Press.
+              In S. Haber (Ed.),{" "}
+              <i>How Latin America fell behind</i> (pp. 260–304). Stanford University
+              Press.
             </li>
+
             <li>
               García-Jimeno, C., & Robinson, J. A. (2011).{" "}
-              <i>The Myth of the Frontier.</i> National Bureau of Economic
-              Research Working Paper No. 14774.
+              <i>The Myth of the Frontier.</i> National Bureau of Economic Research
+              Working Paper No. 14774.
             </li>
+
             <li>
               González Escobar, L. F. (s.f.).{" "}
               <i>
@@ -422,19 +624,21 @@ const App: React.FC = () => {
               </i>{" "}
               Archivo familiar de la familia Abuchar.
             </li>
+
             <li>
               Abuchar, A. (2020).{" "}
               <i>Testimonio oral sobre la Empresa Agrícola de Sautatá.</i> En{" "}
-              <i>Sautatá</i>. Audio de memoria familiar.
+              <i>Sautatá.</i> Audio de memoria familiar.
             </li>
+
             <li>
               SciELO. (2012).{" "}
               <i>
-                El Pacífico colombiano: historia, economía y desarrollo
-                regional.
+                El Pacífico colombiano: historia, economía y desarrollo regional.
               </i>{" "}
               Revista de Estudios Sociales, 43(2), 85–100.
             </li>
+
             <li>
               Universidad Tecnológica del Chocó – Videoteca del Chocó. (2020).{" "}
               <i>Sautatá, memoria de una empresa agroindustrial.</i>{" "}
@@ -447,6 +651,7 @@ const App: React.FC = () => {
                 videotecachoco.utch.edu.co
               </a>
             </li>
+
             <li>
               Yélez, L. (1926).{" "}
               <i>
@@ -455,14 +660,102 @@ const App: React.FC = () => {
               </i>{" "}
               Álbum personal, Turbo, Antioquia.
             </li>
+
             <li>
               Leal, C. (1920).{" "}
               <i>Cargue de un vapor en el puerto de Sautatá [Fotografía].</i>{" "}
               Archivo personal.
             </li>
+
+            <li>
+              ASOCAÑA. (2023).{" "}
+              <i>Informe Anual 2023–2024.</i>{" "}
+              <a
+                href="https://www.asocana.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-amber-300 hover:underline"
+              >
+                asocana.org
+              </a>
+            </li>
+
+            <li>
+              Echeverría, M. T. R. (2019).{" "}
+              <i>El desarrollo de la industria azucarera en el Valle del Cauca.</i>{" "}
+              Revista Economía y Región, Universidad Tecnológica de Bolívar.
+            </li>
+
+            <li>
+              ICA, Instituto Colombiano Agropecuario. (2025, 9 mayo).{" "}
+              <i>
+                La caña que endulza desde el Valle del Cauca se produce…
+              </i>{" "}
+              Recuperado de:{" "}
+              <a
+                href="https://www.ica.gov.co"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-amber-300 hover:underline"
+              >
+                ica.gov.co
+              </a>
+            </li>
+
+            <li>
+              Ministerio de Transporte de Colombia. (s.f.).{" "}
+              <i>
+                Historia del transporte y la infraestructura en Colombia.
+              </i>{" "}
+              Recuperado de:{" "}
+              <a
+                href="https://web.mintransporte.gov.co"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-amber-300 hover:underline"
+              >
+                web.mintransporte.gov.co
+              </a>
+            </li>
+
+            <li>
+              Sánchez Mejía, H. R. (2014).{" "}
+              <i>
+                Estado, innovación y expansión de la agroindustria azucarera en
+                Colombia.
+              </i>{" "}
+              Revista de Estudios Sociales, 46(1), 83–100.
+            </li>
+
+            <li>
+              Lado B. (2022, 26 de abril).{" "}
+              <i>
+                La fábrica de la Manuelita (Valle del Cauca) y el ferrocarril del
+                Pacífico (1920) [Fotografía].
+              </i>{" "}
+              En <i>Los Eder, la familia más importante del Valle.</i>{" "}
+              <a
+                href="https://ladob.info/los-eder-la-familia-mas-importante-del-valle/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-amber-300 hover:underline"
+              >
+                ladob.info
+              </a>
+            </li>
+
+            <li>
+              Contraloría General de la República. (1943).{" "}
+              <i>
+                Oficinas y campamento del Ingenio de Sautatá [Fotografía].
+              </i>{" "}
+              En <i>Geografía Económica de Colombia</i> (Vol. VI, Chocó, p. 443).
+              Bogotá: Contraloría General de la República.
+            </li>
           </ul>
         </motion.div>
       </section>
+
 
       {/* ======= FOOTER ======= */}
       <footer className="text-center py-8 text-choco-700 text-sm">
